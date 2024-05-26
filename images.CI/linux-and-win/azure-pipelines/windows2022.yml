@@ -7,11 +7,6 @@
 #   always: true
 
 trigger: main
-pr:
-  autoCancel: true
-  branches:
-    include:
-    - main
 
 jobs:
 - template: image-generation.yml
