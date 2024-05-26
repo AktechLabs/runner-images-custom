@@ -1,12 +1,17 @@
-# schedules:
-# - cron: "0 0 * * *"
-#   displayName: Daily
-#   branches:
-#     include:
-#     - main
-#   always: true
+schedules:
+- cron: "0 0 * * *"
+  displayName: Daily
+  branches:
+    include:
+    - main
+  always: true
 
-trigger: main
+trigger: none
+pr:
+  autoCancel: true
+  branches:
+    include:
+    - main
 
 jobs:
 - template: image-generation.yml
