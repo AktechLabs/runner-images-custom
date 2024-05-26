@@ -1,12 +1,12 @@
-schedules:
-- cron: "0 0 * * *"
-  displayName: Daily
-  branches:
-    include:
-    - main
-  always: true
+# schedules:
+# - cron: "0 0 * * *"
+#   displayName: Daily
+#   branches:
+#     include:
+#     - main
+#   always: true
 
-# trigger: true
+trigger: main
 pr:
   autoCancel: true
   branches:
